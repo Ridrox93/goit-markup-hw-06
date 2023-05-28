@@ -653,13 +653,15 @@ body {
 
 
 /*footer form*/
-.footer-form-field {
+.footer-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
 }
 
+.footer-form-field {
+    margin-right: 24px;
+}
 
 
 .input-description-black {
@@ -672,6 +674,9 @@ body {
     height: 40px;
     padding: 8px 16px;
     color: #FFFFFF;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .input-description-black::placeholder {
@@ -703,14 +708,25 @@ body {
 }
 
 .footer-subscribe-button {
+    min-width: 165px;
     padding: 8px 24px;
     height: 40px;
-    padding: 8px 24px;
-    gap: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
     background-color: #4D5AE5;
     border-radius: 4px;
-    border: none;
+    outline: none;
     transition: background-color var(--transition-standard);
+    cursor: pointer;
 }
 
 .footer-subscribe-button:focus,
@@ -718,10 +734,10 @@ body {
     background-color: #404BBF;
 }
 
-.footer-subscribe-button:focus>.footer-subscribe-button-deskription,
-.footer-subscribe-button:hover>.footer-subscribe-button-deskription {
-    background-color: #404BBF;
+.footer-subscribe-button-icon {
+    margin-left: 16px;
 }
+
 
 
 /*portfolio*/
@@ -942,9 +958,16 @@ body {
 .modal-form {
     display: flex;
     flex-direction: column;
-    pading: 24px;
+    padding: 24px;
 }
 
+.modal-form-field-wraper-one {
+    margin-bottom: 8px;
+}
+
+.modal-form-field {
+    display: block;
+}
 
 
 .modal-text-top {
@@ -958,6 +981,7 @@ body {
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 
@@ -1079,10 +1103,6 @@ body {
 
 }
 
-.modal-input-wraper {
-    display: block;
-    margin-bottom: 8px;
-}
 
 .black-svg {
     position: absolute;

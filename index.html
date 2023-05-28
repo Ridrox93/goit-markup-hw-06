@@ -374,17 +374,19 @@
                     </li>
                 </ul>
             </div>
+            <!-- footer form -->
+
             <div class="footer-form-wraper">
                 <p class="footer-social-title">Subscribe</p>
                 <form class="footer-form">
                     <label class="footer-form-field">
                         <input name="user-mail" class="input-description-black" placeholder="E-mail" type="email"
                             required pattern="^\S+@\S+\.\S+$" title="example@mail.com">
-                        <button type="submit" class="footer-subscribe-button"><span
-                                class="footer-subscribe-button-deskription">Subscribe <svg width="24px" height="24px">
-                                    <use href="./images/icons.svg#icon-Frame"></use>
-                                </svg></span></button>
                     </label>
+                    <button type="submit" class="footer-subscribe-button">Subscribe <svg
+                            class="footer-subscribe-button-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-Frame"></use>
+                        </svg></button>
                 </form>
 
 
@@ -393,8 +395,8 @@
 
         </div>
     </footer>
-    <!-- backdrop overlay -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- backdrop overlay  ****is-hidden***** -->
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn " data-modal-close>
                 <svg class="modal-close-btn-icon" width="8" height="8">
@@ -403,36 +405,42 @@
             </button>
             <p class="modal-text-top">Leave your contacts and we will call you back</p>
             <form class="modal-form">
-                <label class="modal-form-field">
-                    <span class="modal-usual-desc">Name</span>
-                    <span class="modal-input-wraper">
-                        <input name="user-name" class="input-description" type="text" required
-                            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
-                        <svg class="black-svg" width="18px" height="24px">
-                            <use href="./images/icons.svg#icon-person-black"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="modal-form-field">
-                    <span class="modal-usual-desc">Phone</span>
-                    <span class="modal-input-wraper">
-                        <input name="user-phone" class="input-description" type="tel" required
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="067-451-97-08">
-                        <svg class="black-svg" width="18px" height="24px">
-                            <use href="./images/icons.svg#icon-phone-black"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="modal-form-field">
-                    <span class="modal-usual-desc">Email</span>
-                    <span class="modal-input-wraper">
-                        <input name="user-mail" class="input-description" type="email" required pattern="^\S+@\S+\.\S+$"
-                            title="example@mail.com">
-                        <svg class="black-svg" width="18px" height="24px">
-                            <use href="./images/icons.svg#icon-email-black"></use>
-                        </svg>
-                    </span>
-                </label>
+                <div class="modal-form-field-wraper">
+                    <label class="modal-form-field">
+                        <span class="modal-usual-desc">Name</span>
+                        <span class="modal-input-wraper">
+                            <input name="user-name" class="input-description" type="text" required
+                                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+                            <svg class="black-svg" width="18px" height="24px">
+                                <use href="./images/icons.svg#icon-person-black"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-form-field-wraper">
+                    <label class="modal-form-field">
+                        <span class="modal-usual-desc">Phone</span>
+                        <span class="modal-input-wraper">
+                            <input name="user-phone" class="input-description" type="tel" required
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="067-451-97-08">
+                            <svg class="black-svg" width="18px" height="24px">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="modal-form-field-wraper">
+                    <label class="modal-form-field">
+                        <span class="modal-usual-desc">Email</span>
+                        <span class="modal-input-wraper">
+                            <input name="user-mail" class="input-description" type="email" required
+                                pattern="^\S+@\S+\.\S+$" title="example@mail.com">
+                            <svg class="black-svg" width="18px" height="24px">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
                 <label class="modal-form-field">
                     <span class="modal-usual-desc">Comment</span>
                     <textarea name="user-message" class="modal-user-message"
