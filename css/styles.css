@@ -1146,14 +1146,13 @@ body {
     justify-content: center;
     fill: transparent;
     cursor: pointer;
-    transition: background-color var(--transition-standard), fill var(--transition-standard), border-color var(--transition-standard);
 }
 
-.checkbox-description {
+/* .checkbox-description {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; 
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1161,7 +1160,7 @@ body {
     letter-spacing: 0.04em;
     color: #8E8F99;
     background: #FCFCFC;
-}
+} */
 
 .modal-form-submit-button {
     align-self: center;
