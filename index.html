@@ -392,7 +392,7 @@
         </div>
     </footer>
     <!-- backdrop overlay  ****is-hidden***** -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn " data-modal-close>
                 <svg class="modal-close-btn-icon" width="8" height="8">
@@ -443,15 +443,18 @@
                     <label class="modal-form-field" for="user-comment">
                         <span class="modal-usual-desc">Comment</span>
                     </label>
-                    <textarea name="user-message" id="user-comment" class="modal-user-message"
+                    <textarea name="user-comment" id="user-comment" class="modal-user-message"
                         placeholder="Text input"></textarea>
                 </div>
                 <div class="checkbox-wraper">
+                    <input name="user-privacy" id="user-privacy" type="checkbox" value="true" class="modal-checkbox"
+                        required>
                     <label class="modal-form-field-checkbox" for="user-privacy">
-                        <input name="user-privacy" id="user-privacy" type="checkbox" value="true" class="modal-checkbox"
-                            required>
+                        <Span class="fake-chackbox"><svg class="fake-chackbox-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg></Span>
                         <span class="checkbox-description">I accept the terms and conditions of the &nbsp;<a href="#"
-                                class="privacy-policy"> Privacy Policy</a>
+                                class="privacy-policy">Privacy Policy</a>
                         </span>
                     </label>
                 </div>
