@@ -1108,6 +1108,7 @@ body {
     margin: -1px;
     width: 1px;
     height: 1px;
+
 }
 
 .modal-checkbox:checked+.modal-form-field-checkbox>.fake-chackbox {
@@ -1116,6 +1117,7 @@ body {
     fill: var(--white);
     border-color: var(--blue-tema);
 }
+
 
 
 .black-svg {
